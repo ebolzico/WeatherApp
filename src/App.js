@@ -5,7 +5,7 @@ import Cards from './components/Cards.jsx';
 import {Route} from 'react-router-dom';
 import About from './components/About.jsx';
 import Ciudad from './components/Ciudad.jsx';
- 
+import swal from 'sweetalert'
 
 
 export default function App() {
@@ -28,7 +28,7 @@ export default function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon
           };
-          var aux=cities.filter(ci => ci.id!== city.id)
+          var aux=cities.filter(ci => ci.id!== ciudad.id)
           if (cities.length!==aux.length){
             swal({
               title: 'Error',
