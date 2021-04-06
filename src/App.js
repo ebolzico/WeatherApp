@@ -28,9 +28,15 @@ export default function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon
           };
-          setCities(oldCities => [...oldCities, ciudad]);
+          var aux=cities.filter(ci => ci.id!== city.id)
+          if (cities.length!==aux.length){
+            swal({
+              title: 'Error',
+              text: 'The city you searched for is already'
+            })
+          }
         } else {
-          alert("Ciudad no encontrada");
+          setCities([...aux, ciudad]);
         }
       });
   }
