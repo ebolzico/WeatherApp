@@ -1,0 +1,14 @@
+.search{
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+  width: 100%;
+  background-color: #f5d106;
+  flex-direction: row;
+}
+
+.name{
+  display: flex;
+  align-self: center;
+  justify-self: flex-start;
+}

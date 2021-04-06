@@ -1,0 +1,66 @@
+.whole{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  height: 50%;
+  border: 3px solid black; 
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.content{
+  flex-direction: row;
+}
+
+.button{
+  font-size: 10px;
+  margin: 5px;
+  align-self: flex-end;
+  width: 15%;
+  border-radius: 25px;
+  border-style: hidden;
+  background-color:black;  
+  justify-content: center; 
+  color: white;
+  
+}
+
+.button:hover{
+  transition: 100ms ease-out; 
+  background-color: red;
+}
+
+.ciudad{
+  
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans';
+  top: 2px;
+  color: black;
+    
+}
+
+.temp{
+
+  flex-direction: row;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.min{
+  font-size: 20px;
+  color: blue;
+  margin: 2px;
+}
+
+.max{
+  font-size: 20px;
+  color: red;
+  margin: 1px;
+}
+
+.img{
+  margin: 2px;
+  padding: 0px;
+}

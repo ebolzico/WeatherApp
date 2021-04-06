@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    width: 500px;
+    justify-items: space-around;
+    margin: 20px;
+    right: 20px;
+}
+
+.input{
+    margin: 2px;
+    justify-self: flex-end;
+    border-radius: 12px;
+    
+}
+
+.button{
+    background-color: black;
+}
+
