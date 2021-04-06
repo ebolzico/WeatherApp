@@ -11,9 +11,7 @@ function Nav({onSearch}) { //onSearch= significa que le das un atributo con el v
       <Link exact to= '/'>
       <h2 className="name">Weather App</h2>
       </Link>
-      <Link to= '/about'>
-        <span>About</span>
-      </Link>
+      <span>About</span>
       <SearchBar onSearch={onSearch}/>  
     </div>
   );
