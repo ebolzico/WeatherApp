@@ -34,9 +34,9 @@ export default function App() {
               title: 'Error',
               text: 'The city you searched for is already'
             })
-          }
+          } else {setCities([...aux, ciudad])}
         } else {
-          setCities([...aux, ciudad]);
+          setCities([...cities, ciudad]);
         }
       });
   }
