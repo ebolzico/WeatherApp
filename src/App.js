@@ -32,7 +32,7 @@ export default function App() {
           if (cities.length!==aux.length){
             swal({
               title: 'Error',
-              text: 'The city you searched for is already'
+              text: 'The city you searched for is already listed'
             })
           } else {setCities([...aux, ciudad])}
         } else {

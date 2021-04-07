@@ -9,6 +9,7 @@ export default function SearchBar({onSearch}) {
       onSubmit={(e) => {
         e.preventDefault(); // default: agregar=refresh, yo no quiero eso, por eso cuando le doy
         onSearch(city);     // agregar, que ejecute onSearch
+        setCity('')
     }}>
       <input
         className="input"
