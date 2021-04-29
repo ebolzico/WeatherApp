@@ -18,7 +18,7 @@ export default function SearchBar({onSearch}) {
         value={city}
         onChange={e => setCity(e.target.value)}// Modifica city cuando haya un cambio en el target
       />
-      <input className="button" type="submit" value="Agregar" />
+      <input className="searchButton" type="submit" value="Add" />
     </form>
           // este input, que tiene del tipo submit, cuando activa, hace una accion del tipo
   );      // "submit". Eso activa el onSubmit que esta arriba (que actua como un event listener)

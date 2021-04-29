@@ -10,10 +10,10 @@ function Nav({onSearch}) { //onSearch= significa que le das un atributo con el v
     swal({
       title: 'App by Emanuel Bolzico',
       text: 'This is a non-profit app, developed with the purpouse of learning new habilities',
-      buttons:['Esc', 'Know more about me']
+      buttons:['Esc', 'Know more about the app']
     }).then(() => {
       swal({
-        text: 'I am 26 year old man that wants to learn how to make efficient and comftarble websites with good visuals. For more of my works, feel free to visit my github!'
+        text: 'This app was made using React technology and is front-end only. It includes pure CSS for the styiling and a multi-component render'
       })
     })
   }
@@ -21,9 +21,10 @@ function Nav({onSearch}) { //onSearch= significa que le das un atributo con el v
     <div className= "search">
       <Link exact to= '/'>
       <h2 className="name">Weather App</h2>
+      <h6 className="name">By Emanuel Bolzico</h6>
       </Link>
-      <button onClick= {about}>About</button>
       <SearchBar onSearch={onSearch}/>  
+      <button className="aboutBtn" onClick= {about}>About</button>
     </div>
   );
 };

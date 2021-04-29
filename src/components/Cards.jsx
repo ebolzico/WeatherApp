@@ -7,7 +7,7 @@ export default function Cards({cities, onClose}) {
   if(cities.length !== 0){       // En este if te dice que si recibe un valor en cities, que renderize todo, 
     return (        // else, que renderize otra cosa ("Sin ciudades")
       
-      <div className={Cards.cards}>
+      <div className="cards">
         {cities.map(c => 
         <Card
             max={c.max}

@@ -1,19 +1,28 @@
 .form{
     display: flex;
-    width: 500px;
-    justify-items: space-around;
+    width: 30%;
+    
+    align-items: center;
     margin: 20px;
     right: 20px;
 }
 
 .input{
+    display: flex;
     margin: 2px;
     justify-self: flex-end;
     border-radius: 12px;
-    
+    outline: none;
 }
 
-.button{
-    background-color: black;
+.searchButton{
+    display: flex;
+    background-color: red;
+    border-radius: 5vh;
+    outline: none;
+    transition: 0.5s;
 }
 
+.searchButton:hover{
+    background-color: white;
+}
